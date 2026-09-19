@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import founderImg from "../assets/founder.jpeg";
 import cofounderImg from "../assets/cofounder.jpeg";
 import developer4Img from "../assets/developer4.jpg";
-import vaibhavImg from "../assets/vaibhav.png";
 import dhruvImg from "../assets/dhruv.jpeg";
 import mohitImg from "../assets/mohit.jpg";
 import ayushImg from "../assets/ayush.jpg";
@@ -51,7 +50,7 @@ function Team() {
     {
       name: "Vaibhav Baliyan",
       role: "Application Developer",
-      image: vaibhavImg,
+      image: "",
       profile: "/team/vaibhav",
       desc: "I build modern, responsive, and user-friendly mobile applications with clean UI, smooth performance, and scalable architecture. I specialize in API integration, authentication, database connectivity, state management, and performance optimization to deliver secure, reliable, and deployment-ready applications. I focus on creating intuitive user experiences and maintainable code that ensures seamless functionality across devices.",
       tags: ["React Native", "Flutter", "Firebase", "REST API", "Authentication", "Mobile UI", "Android", "iOS", "State Management", "Push Notifications", "Deployment"],
