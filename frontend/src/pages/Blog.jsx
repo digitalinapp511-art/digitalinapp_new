@@ -18,7 +18,7 @@ function Blog() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/blogs");
+        const res = await axios.get("https://digitalinapp-new.onrender.com/api/blogs");
 
         setPosts(res.data.allPost);
 
