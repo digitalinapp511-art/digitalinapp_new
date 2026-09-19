@@ -48,7 +48,7 @@ function Contact() {
 
     try {
 
-      const res = await axios.post('http://localhost:8080/api/send-mail', formData)
+      const res = await axios.post('https://digitalinapp-new.onrender.com/api/send-mail', formData)
       setAlertType('success')
       setAlerthMsg(res.data.message)
       console.log(res.data.message)
