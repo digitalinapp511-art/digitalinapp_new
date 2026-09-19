@@ -1897,7 +1897,7 @@ function Team() {
 //       console.log("Sending Blog...");
 
 //       const res = await axios.post(
-//         "http://localhost:8080/api/create/blog",
+//         "https://digitalinapp-new.onrender.com/api/create/blog",
 //         data
 //       );
 
@@ -2508,7 +2508,7 @@ function Blogs() {
       console.log("Image:", formData.coverImage);
 
       const res = await axios.post(
-        "http://localhost:8080/api/create/blog",
+        "https://digitalinapp-new.onrender.com/api/create/blog",
         data
       );
 
@@ -3758,7 +3758,7 @@ const BlogList = () => {
   const getAllBlogs = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/blogs"
+        "https://digitalinapp-new.onrender.com/api/blogs"
       );
 
 
@@ -3782,7 +3782,7 @@ const BlogList = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/blog/delete/${id}`
+        `https://digitalinapp-new.onrender.com/api/blog/delete/${id}`
       );
 
       if (response.data.success) {
