@@ -22,7 +22,7 @@ const BlogDetails = () => {
       setError("");
 
       const response = await axios.get(
-        `http://localhost:8080/api/blog/${slug}`
+        `https://digitalinapp-new.onrender.com/api/blog/${slug}`
       );
 
       console.log("SINGLE BLOG:", response.data);
@@ -53,7 +53,7 @@ const BlogDetails = () => {
       setBlogsLoading(true);
 
       const response = await axios.get(
-        "http://localhost:8080/api/latest-blog"
+        "https://digitalinapp-new.onrender.com/api/latest-blog"
       );
 
       console.log("LATEST BLOGS:", response?.data.latestBlog);
@@ -82,7 +82,7 @@ const BlogDetails = () => {
   const getBlogs = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/blogs"
+        "https://digitalinapp-new.onrender.com/api/blogs"
       );
 
       console.log("ALL BLOGS:", response.data);
