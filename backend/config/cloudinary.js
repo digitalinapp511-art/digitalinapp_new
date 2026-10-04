@@ -5,6 +5,7 @@ cloudinary.config({
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
+<<<<<<< HEAD
 cloudinary.api.ping((error, result) => {
     if (error) {
         console.log("❌ Cloudinary Authentication Failed");
@@ -14,5 +15,18 @@ cloudinary.api.ping((error, result) => {
         console.log(result);
     }
 });
+=======
+
+console.log("========== CLOUDINARY CONFIG ==========");
+console.log("Cloud Name:", process.env.CLOUDINARY_CLOUD_NAME);
+console.log(
+    "API Key Loaded:",
+    !!process.env.CLOUDINARY_API_KEY
+);
+console.log(
+    "API Secret Loaded:",
+    !!process.env.CLOUDINARY_API_SECRET
+);
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
 
 module.exports = cloudinary;

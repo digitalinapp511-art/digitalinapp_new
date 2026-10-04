@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import founderImg from "../assets/founder.jpeg";
 import cofounderImg from "../assets/cofounder.jpeg";
 import developer4Img from "../assets/developer4.jpg";
+<<<<<<< HEAD
 import vaibhavImg from "../assets/vaibhav.png";
+=======
+import vaibhavImg from "../assets/vaibhav.PNG";
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
 import dhruvImg from "../assets/dhruv.jpeg";
 import mohitImg from "../assets/mohit.jpg";
 import ayushImg from "../assets/ayush.jpg";

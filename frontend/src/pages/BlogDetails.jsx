@@ -742,4 +742,8 @@ useEffect(() => {
   );
 };
 
+<<<<<<< HEAD
 export default BlogDetails;
+=======
+export default BlogDetails;
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f

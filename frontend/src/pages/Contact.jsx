@@ -609,4 +609,8 @@ function SelectField({ label, icon, children, name, value, onChange }) {
   );
 }
 
+<<<<<<< HEAD
 export default Contact;
+=======
+export default Contact;
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f

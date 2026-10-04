@@ -10,6 +10,7 @@ const transporter = nodemailer.createTransport({
         pass: process.env.EMAILPASS,
     },
 });
+<<<<<<< HEAD
 
 transporter.verify((error, success) => {
 
@@ -22,4 +23,6 @@ transporter.verify((error, success) => {
     }
 
 });
+=======
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
 module.exports = transporter;

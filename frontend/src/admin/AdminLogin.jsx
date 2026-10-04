@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Lock, Mail, ShieldCheck } from "lucide-react";
+<<<<<<< HEAD
 import axios from 'axios'
+=======
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
 
 function AdminLogin() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+<<<<<<< HEAD
     email: '',
     password: ''
   })
@@ -15,12 +19,21 @@ function AdminLogin() {
 
 
 
+=======
+    email: "",
+    password: "",
+  });
+
+  const [error, setError] = useState("");
+
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
   };
+<<<<<<< HEAD
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -63,6 +76,21 @@ function AdminLogin() {
       setError(
         error?.response?.data?.message
       );
+=======
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setError("");
+
+    if (
+      formData.email === "digitalinapp511@gmail.com" &&
+      formData.password === "digitalinapp@1234"
+    ) {
+      localStorage.setItem("digitalinapp_admin_token", "admin_logged_in");
+      navigate("/admin");
+    } else {
+      setError("Invalid email or password");
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
     }
   };
 
@@ -130,7 +158,11 @@ function AdminLogin() {
 
           <button
             type="submit"
+<<<<<<< HEAD
             className="cursor-pointer w-full rounded-2xl bg-white px-6 py-3 text-sm font-black text-slate-950 shadow-xl transition hover:bg-purple-100"
+=======
+            className="w-full rounded-2xl bg-white px-6 py-3 text-sm font-black text-slate-950 shadow-xl transition hover:bg-purple-100"
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
           >
             Login
           </button>

@@ -11,6 +11,13 @@ const blogModel = require('../model_and_schema/blogModel');
 
 const createBlog = async (req, res) => {
     try {
+<<<<<<< HEAD
+=======
+        console.log("========== CREATE BLOG ==========");
+        console.log("BODY:", req.body);
+        console.log("FILE:", req.file);
+
+>>>>>>> bcbe85cfaa96d8781fd58698680934e3d464ea1f
         const {
             title,
             slug,
