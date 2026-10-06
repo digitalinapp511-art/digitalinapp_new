@@ -14,7 +14,7 @@ function Dashboard() {
 
   const getalldata = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/dashboard')
+      const res = await axios.get('https://digitalinapp-new.onrender.com/api/dashboard')
       setTotalTeam(res.data.totalTeam)
       setTotalClient(res.data.totalClient)
       setTotalProjects(res.data.totalProject)
